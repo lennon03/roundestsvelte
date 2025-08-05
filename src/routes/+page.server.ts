@@ -19,5 +19,5 @@ export async function load() {
     /*
      */
     console.log(users)
-    return process.env;
+    return users[0];
 }
