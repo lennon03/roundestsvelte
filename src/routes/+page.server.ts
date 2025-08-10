@@ -1,23 +1,17 @@
 import { drizzle } from 'drizzle-orm/node-postgres';
-// import { eq } from 'drizzle-orm';
 import { usersTable } from '../db/schema';
 import { Pool } from "pg";
-import 'dotenv/config';
 
+export async function load({request, platform}) {
+    const pool = new Pool({
+        connectionString: platform!.env.HYPERDRIVE.connectionString
+    })
 
-const pool = new Pool({
-//    connectionString: process.env.HYPERDRIVE.connectionString!,
-    connectionString: process.env.DEV_DB!,
-});
-const db = drizzle({ client: pool });
+    const db = drizzle({ client: pool });
 
-
-export async function load() {
     const users = await db.select().from(usersTable);
-    console.log(process.env!);
+    console.log(platform!.env.HYPERDRIVE.connectionString);
     console.log('Getting all users from the database: ', users);
-    /*
-     */
     console.log(users)
     return users[0];
 }
