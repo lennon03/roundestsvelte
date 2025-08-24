@@ -1,7 +1,7 @@
 <script lang="ts">
-    let { data } = $props();
-    const bob = data;
-    console.log(data)
+	let { data } = $props();
+	const bob = data;
+	console.log(data);
 </script>
 
 <h1>Welcome to bob</h1>

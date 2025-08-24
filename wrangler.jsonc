@@ -18,7 +18,7 @@
 	 * Smart Placement
 	 * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
 	 */
-	 "placement": { "mode": "smart" },
+	"placement": { "mode": "smart" },
 	/**
 	 * Bindings
 	 * Bindings allow your Worker to interact with resources on the Cloudflare Developer Platform, including
@@ -44,16 +44,14 @@
 	 * https://developers.cloudflare.com/workers/wrangler/configuration/#service-bindings
 	 */
 	// "services": [{ "binding": "MY_SERVICE", "service": "my-service" },
-  // Add this to your wrangler.jsonc
-  "hyperdrive": [
-    {
-      "binding": "HYPERDRIVE",
-      "id": "2aad4f5241ac4a17a2fe71be82d49a6a",
-      // Optional. Can be used to connect to a local database for local development with `wrangler dev`
-      "localConnectionString": "postgresql://neondb_owner:npg_Cjnop4e1JwvQ@ep-nameless-scene-a2zp08ui-pooler.eu-central-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
-    }
-  ],
-    "compatibility_flags": [
-      "nodejs_compat"
-    ]
+	// Add this to your wrangler.jsonc
+	"hyperdrive": [
+		{
+			"binding": "HYPERDRIVE",
+			"id": "2aad4f5241ac4a17a2fe71be82d49a6a",
+			// Optional. Can be used to connect to a local database for local development with `wrangler dev`
+			"localConnectionString": "postgresql://neondb_owner:npg_Cjnop4e1JwvQ@ep-nameless-scene-a2zp08ui-pooler.eu-central-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
+		}
+	],
+	"compatibility_flags": ["nodejs_compat"]
 }
