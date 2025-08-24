@@ -48,9 +48,9 @@
   "hyperdrive": [
     {
       "binding": "HYPERDRIVE",
-      "id": "66ed79ce9d944c87bfd69cb8e98a818a",
+      "id": "2aad4f5241ac4a17a2fe71be82d49a6a",
       // Optional. Can be used to connect to a local database for local development with `wrangler dev`
-      "localConnectionString": "postgresql://neondb_owner:npg_Cjnop4e1JwvQ@ep-nameless-scene-a2zp08ui-pooler.eu-central-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require",
+      "localConnectionString": "postgresql://neondb_owner:npg_Cjnop4e1JwvQ@ep-nameless-scene-a2zp08ui-pooler.eu-central-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
     }
   ],
     "compatibility_flags": [
